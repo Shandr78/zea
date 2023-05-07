@@ -1,0 +1,69 @@
+// ================================================== max 1090px
+@media (max-width: 1090px) {
+  .header__menu,
+  .header__social,
+  .select__body {
+   display: none;
+ }
+ .header__box{
+  min-width: rem(30);
+ }
+ .menu__icon{
+  margin-left: auto;
+ }
+}
+
+// ================================================== max 770px
+@media (max-width: 680px) {
+  .menu-body {
+   
+    // .menu-body__logo
+  
+    &__logo {
+    margin-top: calc((74 / 578) * 100vh);
+    margin-bottom: calc((30 / 578) * 100vh);
+    }
+
+     // .menu-body__list
+  
+    &__list {
+    margin-bottom: calc((30 / 578) * 100vh);
+    }
+
+    // .menu-body__item
+  
+    &__item {
+      &:not(:last-child) {
+      padding-bottom: calc((30 / 578) * 100vh);
+      }
+    }
+  
+    // .menu-body__lang
+  
+    &__lang {
+    margin-bottom: calc((35 / 578) * 100vh);
+    font-size: rem(17);
+    }
+  
+    // .menu-body__social
+  
+    &__social {
+      margin-bottom: calc((30 / 578) * 100vh);
+    }
+  
+    &__callback-box {
+      & > p:nth-child(1) {
+        margin-top: calc((30 / 578) * 100vh);
+        margin-bottom: calc((15 / 578) * 100vh);
+      }
+      & > p:nth-child(2) {
+        margin-bottom: calc((30 / 578) * 100vh);
+      }
+    }
+  }
+
+
+
+
+
+}

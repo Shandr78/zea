@@ -1,0 +1,55 @@
+// ================================================== max 1090px
+@media (max-width: 1090px) {
+  .project {
+    // .project__wrap
+
+    &__wrap {
+     flex-direction: column-reverse;
+
+    }
+
+    // .project__box-info
+
+    &__box-info {
+      
+    }
+
+    // .project__title
+
+    &__title {
+      margin-bottom: 0;
+    }
+
+    // .project__number
+
+    &__number {
+      display: none;
+    }
+
+    // .project__description
+
+    &__description {
+      display: none;
+    }
+
+    // .project__btn
+
+    &__btn {
+      display: none;
+    }
+
+    // .project__date
+
+    &__date {
+      display: none;
+    }
+
+    // .project__box-img
+
+    &__box-img {
+      padding-left: 0;
+      margin-bottom: rem(27);
+      @include adaptiveValue("margin-bottom", 27, 30, 3, 820, 375);
+    }
+  }
+}

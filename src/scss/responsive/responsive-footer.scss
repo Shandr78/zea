@@ -1,0 +1,77 @@
+// ================================================== max 1090px
+@media (max-width: 1090px) {
+  
+  .footer {
+    &__wrap {
+      justify-content: space-between;
+    }
+
+    // .footer__logo
+  
+    &__logo {
+      margin-right: auto;
+      padding-right: rem(10);
+      font-size: rem(14);
+    }
+  
+    // .footer__social
+  
+    &__social {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      padding-bottom: rem(29);
+    }
+  
+    // .footer__box
+  
+    &__box {
+      max-width: 100%;
+    }
+  
+    // .footer__menu
+  
+    &__menu {
+     flex-basis: 100%;
+      margin: 0;
+    }
+
+   // .footer__menu-item
+
+   &__menu-item {
+    font-size: rem(14);
+   }
+
+  }
+
+}
+
+// ================================================== max 640px
+@media (max-width: 640px) {
+  .footer {
+   
+    // .footer__logo
+  
+    &__logo {
+      display: none;
+    }
+  
+    // .footer__box
+  
+    &__box {
+      width: 100%;
+    }
+  
+    // .footer__menu
+  
+    &__menu {
+    
+    }
+
+   // .footer__menu-item
+
+   &__menu-item {
+   }
+
+  }
+}
