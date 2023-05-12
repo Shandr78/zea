@@ -1,0 +1,169 @@
+//====================================================================================================
+.contacts-page {
+    margin-bottom: rem(253);
+}
+.contacts {
+  // .contacts__container
+
+  &__container {
+  }
+
+  // .contacts__box
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    @include adaptiveValue("margin-top", 160, 150, 2, 1920, 821);
+    @include adaptiveValue("margin-top", 150, 74, 3, 820, 375);
+    
+  }
+
+  // .contacts__info
+
+  &__info {
+    min-width: 50%;
+    position: relative;
+  }
+
+  // .contacts__title
+
+  &__title {
+    
+  }
+
+  // .contacts__list
+
+  &__list {
+  }
+
+  // .contacts__subtitle
+
+  &__subtitle {
+    text-transform: uppercase;
+    font-size: rem(30);
+    @include adaptiveValue("margin-bottom", 80, 289, 2, 1920, 820);
+    @include adaptiveValue("margin-bottom", 289, 45, 3, 820, 375);
+  }
+
+  // .contacts__address
+
+  &__address {
+    @include adaptiveValue("margin-bottom", 24, 30, 2, 1920, 820);
+    @include adaptiveValue("margin-bottom", 30, 15, 3, 820, 375);
+  }
+
+  // .contacts__phone
+
+  &__phone {
+    text-align: left;
+    @include adaptiveValue("margin-bottom", 17, 30, 2, 1920, 820);
+    @include adaptiveValue("margin-bottom", 30, 15, 3, 820, 375);
+  }
+
+  // .contacts__e-mail
+
+  &__e-mail {
+   
+
+  }
+
+  // .contacts__social
+
+  &__social {
+   position: absolute;
+   bottom: rem(79);
+  }
+  &__callback {
+    max-width: rem(611);
+  }
+}
+.visually-hidden {
+}
+.social {
+  // .social__list
+
+  &__list {
+  }
+
+  // .social__item
+
+  &__item {
+   
+  }
+
+  // .social__link
+
+  &__link {
+  }
+}
+.callback {
+  // .callback__form
+
+  &__form {
+  }
+
+  // .callback__form-title
+
+  &__form-title {
+    text-transform: uppercase;
+    font-size: rem(30);
+    @include adaptiveValue("margin-bottom", 80, 289, 2, 1920, 820);
+    @include adaptiveValue("margin-bottom", 289, 45, 3, 820, 375);
+  }
+
+  // .callback__form-name
+
+  &__form-name {
+  }
+
+  // .callback__form-tel-phone
+
+  &__form-tel-phone {
+    margin-top: rem(43); //43+10=53
+  }
+
+  // .callback__form-email
+
+  &__form-email {
+    margin-top: rem(43); //43+10=53
+  }
+
+  // .callback__form-question
+
+  &__form-question {
+    margin-top: rem(43); //43+10=53
+  }
+
+  // .callback__form-submit
+
+  &__form-submit {
+    margin-top: rem(40); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+
+  // .callback__info
+
+  &__info {
+    font-size: rem(12);
+  }
+
+  // .callback__form-btn
+
+  &__form-btn {
+    display: inline-block;
+    @include adaptiveValue("padding-top", 12, 7, 0, 820, 375);
+    @include adaptiveValue("padding-right", 96, 66, 0, 820, 375);
+    @include adaptiveValue("padding-bottom", 12, 8, 0, 820, 375);
+    @include adaptiveValue("padding-left", 96, 65, 0, 820, 375);
+   
+  }
+}
+.input {
+}
+.dark-btn {
+}
+
+//====================================================================================================

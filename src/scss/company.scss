@@ -1,0 +1,78 @@
+//====================================================================================================
+
+.company-page {
+  @include adaptiveValue("margin-bottom", 80, 74, 2, 1920, 820);
+  @include adaptiveValue("margin-bottom", 74, 45, 3, 820, 375);
+}
+.company {
+  // .company__container
+
+  &__container {
+  }
+
+  // .company__title
+
+  &__title {
+    font-size: rem(30);
+    text-transform: uppercase;
+    @include adaptiveValue("margin-top", 160, 150, 2, 1920, 821);
+    // @include adaptiveValue("margin-top", 150, 74, 3, 820, 375);
+
+    @include adaptiveValue("margin-bottom", 40, 40, 2, 1920, 820);
+    @include adaptiveValue("margin-bottom", 40, 45, 3, 820, 375);
+  }
+
+  // .company__box
+
+  &__box {
+    @include adaptiveValue("margin-top", 150, 74, 3, 820, 375);
+    display: flex;
+
+    position: relative;
+  }
+
+  // .company__image
+
+  &__image {
+    padding-right: rem(10);
+    min-width: 50%;
+    & img {
+      max-width: 100%;
+    }
+  }
+
+  // .company__info
+
+  &__info {
+    padding-left: rem(20);
+    overflow: hidden;
+   
+    & > p {
+      margin-bottom: rem(25);
+    }
+    & h1 {
+      margin-bottom: rem(25);
+    }
+    & h2 {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  // .company__info-title
+
+  &__info-title {
+  }
+
+  // .company__info-content
+
+  &__info-content {
+  }
+
+  // .company__info-arhitect
+
+  &__info-arhitect {
+  }
+}
+
+//====================================================================================================

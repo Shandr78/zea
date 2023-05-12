@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 @@include('html/_head.htm',{
-"title":"HomePage"
+"title":"Головна | Zearchitects"
 })
 
 <body>
@@ -11,9 +11,10 @@
 			<div class="home__container">
 				<h1 class="home__title">Ukrainian <br> architecture studio</h1>
 				<section class="project">
+
 					<div class="project__wrapper">
 						<div class="project__wrap">
-							<div class="project__box-info child">
+							<div class="project__box-info toggle-child">
 								<div class="project__title">Ks / townhouse</div>
 								<span class="project__number">_017</span>
 								<dl class="project__description">
@@ -40,17 +41,49 @@
 								<time class="project__date" datetime="2019-07-07">‘2019</time>
 							</div>
 
-							<div class="project__box-img child">
+							<div class="project__box-img toggle-child">
 								<img src="@img/projects/ks-townhouse.jpg" alt="Ks / townhouse">
 							</div>
 
 							<!-- Оболонка слайдера -->
-							<div class="project__slider swiper visually-hidden">
+							<div class="project__slider swiper slider-one visually-hidden">
 								<!-- Частина слайдера, що рухається -->
 								<div class="project__swiper-wrapper swiper-wrapper">
 									<!-- Слайд -->
 									<div class="project__slide swiper-slide">
 										<img src="@img/sliders/ks-townhouse/ks-townhouse-1.jpg" alt="image-1">
+									</div>
+									<div class="project__slide--text swiper-slide">
+										<img src="@img/sliders/ks-townhouse/ks-townhouse-6.jpg" alt="image-6">
+										<div class="project__slide-info">
+											<dl class="project__slide-description">
+												<dt>Опис</dt>
+												<dd>
+													<p>Комплекс розташовується в малоповерхової зоні. Місце структуроване сіткою
+														вулиць,
+														але характерне хаотичною тканиною забудови.</p>
+													<p>Комплекс структурує лінію забудови, консольним виносом фасаду формує вулицю.
+														Складається з 6 таунхаусів. Кожний будинок має дві прибудинкові зони. З боку
+														вулиці – вхідна група з паркомісцями, з двору – зона патіо.</p>
+												</dd>
+											</dl>
+											<div class="project__slide-box">
+												<div>Тип</div>
+												<div>Таунхауси</div>
+											</div>
+											<div class="project__slide-box">
+												<div>Місце</div>
+												<div>Київ, Україна</div>
+											</div>
+											<div class="project__slide-box">
+												<div>Площа</div>
+												<div>1 304 м. кв</div>
+											</div>
+											<div class="project__slide-box">
+												<time class="project__slide-date" datetime="2020-07-07">‘2019</time>
+												<span class="project__slide-number">_017</span>
+											</div>
+										</div>
 									</div>
 									<div class="project__slide swiper-slide">
 										<img src="@img/sliders/ks-townhouse/ks-townhouse-2.jpg" alt="image-2">
@@ -73,99 +106,734 @@
 									<div class="project__slide swiper-slide">
 										<img src="@img/sliders/ks-townhouse/ks-townhouse-8.jpg" alt="image-8">
 									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/ks-townhouse/ks-townhouse-9.jpg" alt="image-9">
+									</div>
 								</div>
 								<!-- Якщо потрібна пагінація -->
 								<div class="swiper-pagination"></div>
-								<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
-								<button type="button" class="swiper-button-prev"><img src="@img/icons/arrow-left.svg"
-										alt="button-prev"></button>
-								<button type="button" class="swiper-button-next"><img src="@img/icons/arrow-right.svg"
-										alt="button-prev"></button>
 								<!-- Якщо потрібен скролбар -->
 								<div class="swiper-scrollbar"></div>
 							</div>
-
+							<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+							<button type="button" class="swiper-button-prev button-prev--one">
+								<!-- <img src="@img/icons/arrow-left.svg"alt="button-prev"> -->
+								<svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<rect x="10.6685" y="21.3793" width="15.0618" height="1.08903" rx="0.544514"
+										transform="rotate(-135 10.6685 21.3793)" fill="#1B1B1B" />
+									<rect x="0.0332031" y="10.6774" width="15.1001" height="1" rx="0.5"
+										transform="rotate(-45 0.0332031 10.6774)" fill="#1B1B1B" />
+								</svg>
+							</button>
+							<button type="button" class="swiper-button-next button-next--one">
+								<!-- <img src="@img/icons/arrow-right.svg" alt="button-prev"> -->
+								<svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<rect x="11.3311" y="0.620728" width="15.0618" height="1.08903" rx="0.544514"
+										transform="rotate(45 11.3311 0.620728)" fill="#1B1B1B" />
+									<rect x="21.9663" y="11.3226" width="15.1001" height="1" rx="0.5"
+										transform="rotate(135 21.9663 11.3226)" fill="#1B1B1B" />
+								</svg>
+							</button>
 							<button class="project__toggle-btn"><img src="@img/icons/btn-slider.svg" alt=""></button>
 						</div>
 					</div>
 
 					<div class="project__wrapper">
 						<div class="project__wrap">
-							<div class="project__box-info child">
-								<div class="project__title">Ks / townhouse</div>
-								<span class="project__number">_017</span>
+							<div class="project__box-info toggle-child">
+								<div class="project__title">О / House</div>
+								<span class="project__number">_052</span>
 								<dl class="project__description">
 									<dt>Опис</dt>
 									<dd>
-										<p>Комплекс розташовується в малоповерхової зоні. Місце структуроване сіткою
-											вулиць,
-											але характерне хаотичною тканиною забудови.</p>
-										<p>Комплекс структурує лінію забудови, консольним виносом фасаду формує вулицю.
-											Складається з 6 таунхаусів. Кожний будинок має дві прибудинкові зони. З боку
-											вулиці – вхідна група з паркомісцями, з двору – зона патіо.</p>
+										<p>Індивідуальний будинок в передмісті Одеси. Головним орієнтиром ділянки є
+											море. Організація просторів влаштована орієнтуючись на панораму. З боку
+											вулиці та сусідніх ділянок передбачені аскетичні фасади.
+										</p>
+										<p>Будинок складається з трьох зональних блоків. Просторове формування
+											організовано навколо центрального ядра, яким є атріум. Навколо якого
+											розгортається функціонал планування. Галереї, які охоплюють атріум,
+											об’єднують простори та виводять назовні.</p>
 									</dd>
 
 									<dt>Тип</dt>
-									<dd>Таунхауси</dd>
+									<dd>Приватний будинок</dd>
+
+									<dt>Місце</dt>
+									<dd>Одеса, Україна</dd>
+
+									<dt>Площа</dt>
+									<dd>570 м. кв</dd>
+								</dl>
+
+								<time class="project__date" datetime="2022-07-07">‘2022</time>
+							</div>
+
+							<div class="project__box-img toggle-child">
+								<img src="@img/projects/o-house.jpg" alt="О / House">
+							</div>
+
+							<!-- Оболонка слайдера -->
+							<div class="project__slider swiper slider-two visually-hidden">
+								<!-- Частина слайдера, що рухається -->
+								<div class="project__swiper-wrapper swiper-wrapper">
+									<!-- Слайд -->
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/o-house/o-house-1.jpg" alt="image-1">
+									</div>
+									<div class="project__slide--text swiper-slide">
+										<img src="@img/sliders/o-house/o-house-6.jpg" alt="image-6">
+										<div class="project__slide-info">
+											<dl class="project__slide-description">
+												<dt>Опис</dt>
+												<dd>
+													<p>Індивідуальний будинок в передмісті Одеси. Головним орієнтиром ділянки є
+														море. Організація просторів влаштована орієнтуючись на панораму. З боку
+														вулиці та сусідніх ділянок передбачені аскетичні фасади.
+													</p>
+													<p>Будинок складається з трьох зональних блоків. Просторове формування
+														організовано навколо центрального ядра, яким є атріум. Навколо якого
+														розгортається функціонал планування. Галереї, які охоплюють атріум,
+														об’єднують простори та виводять назовні.</p>
+												</dd>
+											</dl>
+											<div class="project__slide-box">
+												<div>Тип</div>
+												<div>Приватний будинок</div>
+											</div>
+											<div class="project__slide-box">
+												<div>Місце</div>
+												<div>Одеса, Україна</div>
+											</div>
+											<div class="project__slide-box">
+												<div>Площа</div>
+												<div>570 м. кв</div>
+											</div>
+											<div class="project__slide-box">
+												<time class="project__slide-date" datetime="2020-07-07">‘2022</time>
+												<span class="project__slide-number">_052</span>
+											</div>
+										</div>
+
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/o-house/o-house-2.jpg" alt="image-2">
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/o-house/o-house-3.jpg" alt="image-3">
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/o-house/o-house-4.jpg" alt="image-4">
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/o-house/o-house-5.jpg" alt="image-5">
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/o-house/o-house-6.jpg" alt="image-6">
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/o-house/o-house-7.jpg" alt="image-7">
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/o-house/o-house-8.jpg" alt="image-8">
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/o-house/o-house-9.jpg" alt="image-9">
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/o-house/o-house-10.jpg" alt="image-10">
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/o-house/o-house-11.jpg" alt="image-11">
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/o-house/o-house-12.jpg" alt="image-12">
+									</div>
+								</div>
+								<!-- Якщо потрібна пагінація -->
+								<div class="swiper-pagination"></div>
+
+								<!-- Якщо потрібен скролбар -->
+								<div class="swiper-scrollbar"></div>
+							</div>
+							<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+							<button type="button" class="swiper-button-prev button-prev--two">
+								<!-- <img src="@img/icons/arrow-left.svg"alt="button-prev"> -->
+								<svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<rect x="10.6685" y="21.3793" width="15.0618" height="1.08903" rx="0.544514"
+										transform="rotate(-135 10.6685 21.3793)" fill="#1B1B1B" />
+									<rect x="0.0332031" y="10.6774" width="15.1001" height="1" rx="0.5"
+										transform="rotate(-45 0.0332031 10.6774)" fill="#1B1B1B" />
+								</svg>
+							</button>
+							<button type="button" class="swiper-button-next button-next--two">
+								<!-- <img src="@img/icons/arrow-right.svg" alt="button-prev"> -->
+								<svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<rect x="11.3311" y="0.620728" width="15.0618" height="1.08903" rx="0.544514"
+										transform="rotate(45 11.3311 0.620728)" fill="#1B1B1B" />
+									<rect x="21.9663" y="11.3226" width="15.1001" height="1" rx="0.5"
+										transform="rotate(135 21.9663 11.3226)" fill="#1B1B1B" />
+								</svg>
+							</button>
+							<button class="project__toggle-btn"><img src="@img/icons/btn-slider.svg" alt=""></button>
+						</div>
+					</div>
+
+					<div class="project__wrapper">
+						<div class="project__wrap">
+							<div class="project__box-info toggle-child">
+								<div class="project__title">ok / apartmentS</div>
+								<span class="project__number">_051 / 10</span>
+								<dl class="project__description">
+									<dt>Опис</dt>
+									<dd>
+										<p>Комплекс складається з існуючої та проєктуємої частин. В існуючій збудовано 9
+											багатоквартирних будинків. Проєктуєма частина складається з 4
+											багатоквартирних будинків та 2 громадських будівель.</p>
+										<p>В існуючій тканині місця, шукали об’єднуючі фактори. Зв’язуючою ланкою є
+											громадська зона, яка вплетена в оточуючу забудову та підключена до
+											пішохідних потоків міста та лісової зони. Орієнтуючись на це виконане
+											формоутворення проектуємої частини та підкріплено допоміжними функціями
+											обслуговування.</p>
+									</dd>
+
+									<dt>Тип</dt>
+									<dd>Житловий комплекс</dd>
+
+									<dt>Місце</dt>
+									<dd>Обухів, Україна</dd>
+
+									<dt>Площа</dt>
+									<dd>54 777 м. кв</dd>
+								</dl>
+
+								<time class="project__date" datetime="2023-07-07">‘2022</time>
+							</div>
+
+							<div class="project__box-img toggle-child">
+								<img src="@img/projects/ok-apartments.jpg" alt="ok / apartmentS">
+							</div>
+
+							<!-- Оболонка слайдера -->
+							<div class="project__slider swiper slider-three visually-hidden">
+								<!-- Частина слайдера, що рухається -->
+								<div class="project__swiper-wrapper swiper-wrapper">
+									<!-- Слайд -->
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/ok-apartments/ok-apartments-1.jpg" alt="image-1">
+									</div>
+									<div class="project__slide--text swiper-slide">
+										<img src="@img/sliders/ok-apartments/ok-apartments-6.jpg" alt="image-6">
+										<div class="project__slide-info">
+											<dl class="project__slide-description">
+												<dt>Опис</dt>
+												<dd>
+													<p>Комплекс складається з існуючої та проєктуємої частин. В існуючій збудовано 9
+														багатоквартирних будинків. Проєктуєма частина складається з 4
+														багатоквартирних будинків та 2 громадських будівель.</p>
+													<p>В існуючій тканині місця, шукали об’єднуючі фактори. Зв’язуючою ланкою є
+														громадська зона, яка вплетена в оточуючу забудову та підключена до
+														пішохідних потоків міста та лісової зони. Орієнтуючись на це виконане
+														формоутворення проектуємої частини та підкріплено допоміжними функціями
+														обслуговування.</p>
+												</dd>
+											</dl>
+											<div class="project__slide-box">
+												<div>Тип</div>
+												<div>Житловий комплекс</div>
+											</div>
+											<div class="project__slide-box">
+												<div>Місце</div>
+												<div>Обухів, Україна</div>
+											</div>
+											<div class="project__slide-box">
+												<div>Площа</div>
+												<div>54 777 м. кв</div>
+											</div>
+											<div class="project__slide-box">
+												<time class="project__slide-date" datetime="2020-07-07">‘2022</time>
+												<span class="project__slide-number">_051 / 10</span>
+											</div>
+										</div>
+
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/ok-apartments/ok-apartments-2.jpg" alt="image-2">
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/ok-apartments/ok-apartments-3.jpg" alt="image-3">
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/ok-apartments/ok-apartments-4.jpg" alt="image-4">
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/ok-apartments/ok-apartments-5.jpg" alt="image-5">
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/ok-apartments/ok-apartments-6.jpg" alt="image-6">
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/ok-apartments/ok-apartments-7.jpg" alt="image-7">
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/ok-apartments/ok-apartments-8.jpg" alt="image-8">
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/ok-apartments/ok-apartments-9.jpg" alt="image-9">
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/ok-apartments/ok-apartments-10.jpg" alt="image-10">
+									</div>
+								</div>
+								<!-- Якщо потрібна пагінація -->
+								<div class="swiper-pagination"></div>
+								<!-- Якщо потрібен скролбар -->
+								<div class="swiper-scrollbar"></div>
+							</div>
+							<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+							<button type="button" class="swiper-button-prev button-prev--three">
+								<!-- <img src="@img/icons/arrow-left.svg"alt="button-prev"> -->
+								<svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<rect x="10.6685" y="21.3793" width="15.0618" height="1.08903" rx="0.544514"
+										transform="rotate(-135 10.6685 21.3793)" fill="#1B1B1B" />
+									<rect x="0.0332031" y="10.6774" width="15.1001" height="1" rx="0.5"
+										transform="rotate(-45 0.0332031 10.6774)" fill="#1B1B1B" />
+								</svg>
+							</button>
+							<button type="button" class="swiper-button-next button-next--three">
+								<!-- <img src="@img/icons/arrow-right.svg" alt="button-prev"> -->
+								<svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<rect x="11.3311" y="0.620728" width="15.0618" height="1.08903" rx="0.544514"
+										transform="rotate(45 11.3311 0.620728)" fill="#1B1B1B" />
+									<rect x="21.9663" y="11.3226" width="15.1001" height="1" rx="0.5"
+										transform="rotate(135 21.9663 11.3226)" fill="#1B1B1B" />
+								</svg>
+							</button>
+							<button class="project__toggle-btn"><img src="@img/icons/btn-slider.svg" alt="button"></button>
+						</div>
+					</div>
+
+					<div class="project__wrapper">
+						<div class="project__wrap">
+							<div class="project__box-info toggle-child">
+								<div class="project__title">L / House</div>
+								<span class="project__number">_077</span>
+								<dl class="project__description">
+									<dt>Опис</dt>
+									<dd>
+										<p>Комплекс з двох типових будинків. Розташований в селі Нові Петрівці,
+											Київської області. Організація ділянок, орієнтація на видові зони, сценарій
+											планувань вплинули на формотворення будинків.</p>
+										<p></p>
+									</dd>
+
+									<dt>Тип</dt>
+									<dd>Комплекс будинків</dd>
 
 									<dt>Місце</dt>
 									<dd>Київ, Україна</dd>
 
 									<dt>Площа</dt>
-									<dd>1 304 м. кв</dd>
+									<dd>300 м. кв</dd>
 								</dl>
 
-								<time class="project__date" datetime="2019-07-07">‘2019</time>
+								<time class="project__date" datetime="2023-07-07">‘2023</time>
 							</div>
 
-							<div class="project__box-img child">
-								<img src="@img/projects/ks-townhouse.jpg" alt="Ks / townhouse">
+							<div class="project__box-img toggle-child">
+								<img src="@img/projects/l-house.jpg" alt="L / House">
 							</div>
 
 							<!-- Оболонка слайдера -->
-							<div class="project__slider swiper visually-hidden">
+							<div class="project__slider swiper slider-one visually-hidden">
 								<!-- Частина слайдера, що рухається -->
 								<div class="project__swiper-wrapper swiper-wrapper">
 									<!-- Слайд -->
 									<div class="project__slide swiper-slide">
-										<img src="@img/sliders/ks-townhouse/ks-townhouse-1.jpg" alt="image-1">
+										<img src="@img/sliders/l-house/l-house-1.jpg" alt="image-1">
+									</div>
+									<div class="project__slide--text swiper-slide">
+										<img src="@img/sliders/l-house/l-house-6.jpg" alt="image-6">
+										<div class="project__slide-info">
+											<dl class="project__slide-description">
+												<dt>Опис</dt>
+												<dd>
+													<p>Комплекс з двох типових будинків. Розташований в селі Нові Петрівці,
+														Київської області. Організація ділянок, орієнтація на видові зони, сценарій
+														планувань вплинули на формотворення будинків.</p>
+													<p></p>
+												</dd>
+											</dl>
+											<div class="project__slide-box">
+												<div>Тип</div>
+												<div>Комплекс будинків</div>
+											</div>
+											<div class="project__slide-box">
+												<div>Місце</div>
+												<div>Київ, Україна</div>
+											</div>
+											<div class="project__slide-box">
+												<div>Площа</div>
+												<div>300 м. кв</div>
+											</div>
+											<div class="project__slide-box">
+												<time class="project__slide-date" datetime="2020-07-07">‘2023</time>
+												<span class="project__slide-number">_077</span>
+											</div>
+										</div>
+
 									</div>
 									<div class="project__slide swiper-slide">
-										<img src="@img/sliders/ks-townhouse/ks-townhouse-2.jpg" alt="image-2">
+										<img src="@img/sliders/l-house/l-house-2.jpg" alt="image-2">
 									</div>
 									<div class="project__slide swiper-slide">
-										<img src="@img/sliders/ks-townhouse/ks-townhouse-3.jpg" alt="image-3">
+										<img src="@img/sliders/l-house/l-house-3.jpg" alt="image-3">
 									</div>
 									<div class="project__slide swiper-slide">
-										<img src="@img/sliders/ks-townhouse/ks-townhouse-4.jpg" alt="image-4">
+										<img src="@img/sliders/l-house/l-house-4.jpg" alt="image-4">
 									</div>
 									<div class="project__slide swiper-slide">
-										<img src="@img/sliders/ks-townhouse/ks-townhouse-5.jpg" alt="image-5">
+										<img src="@img/sliders/l-house/l-house-5.jpg" alt="image-5">
 									</div>
 									<div class="project__slide swiper-slide">
-										<img src="@img/sliders/ks-townhouse/ks-townhouse-6.jpg" alt="image-6">
+										<img src="@img/sliders/l-house/l-house-6.jpg" alt="image-6">
 									</div>
 									<div class="project__slide swiper-slide">
-										<img src="@img/sliders/ks-townhouse/ks-townhouse-7.jpg" alt="image-7">
+										<img src="@img/sliders/l-house/l-house-7.jpg" alt="image-7">
 									</div>
 									<div class="project__slide swiper-slide">
-										<img src="@img/sliders/ks-townhouse/ks-townhouse-8.jpg" alt="image-8">
+										<img src="@img/sliders/l-house/l-house-8.jpg" alt="image-8">
 									</div>
 								</div>
 								<!-- Якщо потрібна пагінація -->
 								<div class="swiper-pagination"></div>
-								<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
-								<button type="button" class="swiper-button-prev"><img src="@img/icons/arrow-left.svg"
-										alt="button-prev"></button>
-								<button type="button" class="swiper-button-next"><img src="@img/icons/arrow-right.svg"
-										alt="button-prev"></button>
 								<!-- Якщо потрібен скролбар -->
 								<div class="swiper-scrollbar"></div>
 							</div>
-
+							<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+							<button type="button" class="swiper-button-prev button-prev--one">
+								<!-- <img src="@img/icons/arrow-left.svg"alt="button-prev"> -->
+								<svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<rect x="10.6685" y="21.3793" width="15.0618" height="1.08903" rx="0.544514"
+										transform="rotate(-135 10.6685 21.3793)" fill="#1B1B1B" />
+									<rect x="0.0332031" y="10.6774" width="15.1001" height="1" rx="0.5"
+										transform="rotate(-45 0.0332031 10.6774)" fill="#1B1B1B" />
+								</svg>
+							</button>
+							<button type="button" class="swiper-button-next button-next--one">
+								<!-- <img src="@img/icons/arrow-right.svg" alt="button-prev"> -->
+								<svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<rect x="11.3311" y="0.620728" width="15.0618" height="1.08903" rx="0.544514"
+										transform="rotate(45 11.3311 0.620728)" fill="#1B1B1B" />
+									<rect x="21.9663" y="11.3226" width="15.1001" height="1" rx="0.5"
+										transform="rotate(135 21.9663 11.3226)" fill="#1B1B1B" />
+								</svg>
+							</button>
 							<button class="project__toggle-btn"><img src="@img/icons/btn-slider.svg" alt=""></button>
 						</div>
 					</div>
+
+					<div class="project__wrapper">
+						<div class="project__wrap">
+							<div class="project__box-info toggle-child">
+								<div class="project__title">Lv / apartmentS</div>
+								<span class="project__number">_008</span>
+								<dl class="project__description">
+									<dt>Опис</dt>
+									<dd>
+										<p>Вбудова в тканину міста відбувається парцеляцією будинків, продовжуючи
+											існуючу ритмічність забудови. Також на об'єм комплексу вплинула існуюча
+											містобудівна ситуація. Розташування будинків в плані та в об'ємі сформовані
+											хребцями.</p>
+										<p>Поверховість будівель - три та п'ять поверхів. Найбільш висотні будинки
+											обрамляють загальний комплекс. Висотність прибудованих будинків виконана по
+											карнизу існуючих оточуючих будівель.</p>
+									</dd>
+
+									<dt>Тип</dt>
+									<dd>Житловий комплекс</dd>
+
+									<dt>Місце</dt>
+									<dd>Львів, Україна</dd>
+
+									<dt>Площа</dt>
+									<dd>14 314 м. кв</dd>
+								</dl>
+
+								<time class="project__date" datetime="2017-07-07">‘2017</time>
+							</div>
+
+							<div class="project__box-img toggle-child">
+								<img src="@img/projects/lv-apartments.jpg" alt="L / House">
+							</div>
+
+							<!-- Оболонка слайдера -->
+							<div class="project__slider swiper slider-two visually-hidden">
+								<!-- Частина слайдера, що рухається -->
+								<div class="project__swiper-wrapper swiper-wrapper">
+									<!-- Слайд -->
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/lv-apartments/lv-apartments-1.jpg" alt="image-1">
+									</div>
+									<div class="project__slide--text swiper-slide">
+										<img src="@img/sliders/lv-apartments/lv-apartments-6.jpg" alt="image-6">
+										<div class="project__slide-info">
+											<dl class="project__slide-description">
+												<dt>Опис</dt>
+												<dd>
+													<p>Вбудова в тканину міста відбувається парцеляцією будинків, продовжуючи
+														існуючу ритмічність забудови. Також на об'єм комплексу вплинула існуюча
+														містобудівна ситуація. Розташування будинків в плані та в об'ємі сформовані
+														хребцями.</p>
+													<p>Поверховість будівель - три та п'ять поверхів. Найбільш висотні будинки
+														обрамляють загальний комплекс. Висотність прибудованих будинків виконана по
+														карнизу існуючих оточуючих будівель.</p>
+												</dd>
+											</dl>
+											<div class="project__slide-box">
+												<div>Тип</div>
+												<div>Житловий комплекс</div>
+											</div>
+											<div class="project__slide-box">
+												<div>Місце</div>
+												<div>Львів, Україна</div>
+											</div>
+											<div class="project__slide-box">
+												<div>Площа</div>
+												<div>14 314 м. кв</div>
+											</div>
+											<div class="project__slide-box">
+												<time class="project__slide-date" datetime="2020-07-07">‘2017</time>
+												<span class="project__slide-number">_008</span>
+											</div>
+										</div>
+
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/lv-apartments/lv-apartments-2.jpg" alt="image-2">
+									</div>
+									<div class="project__slide--text swiper-slide">
+										<div class="project__slide-info">
+											<dl class="project__slide-description">
+												<dt>Опис</dt>
+												<dd>
+													<p>Вбудова в тканину міста відбувається парцеляцією будинків, продовжуючи
+														існуючу ритмічність забудови. Також на об'єм комплексу вплинула існуюча
+														містобудівна ситуація. Розташування будинків в плані та в об'ємі сформовані
+														хребцями.</p>
+													<p>Поверховість будівель - три та п'ять поверхів. Найбільш висотні будинки
+														обрамляють загальний комплекс. Висотність прибудованих будинків виконана по
+														карнизу існуючих оточуючих будівель.</p>
+												</dd>
+											</dl>
+											<div class="project__slide-box">
+												<div>Тип</div>
+												<div>Житловий комплекс</div>
+											</div>
+											<div class="project__slide-box">
+												<div>Місце</div>
+												<div>Львів, Україна</div>
+											</div>
+											<div class="project__slide-box">
+												<div>Площа</div>
+												<div>14 314 м. кв</div>
+											</div>
+											<div class="project__slide-box">
+												<time class="project__slide-date" datetime="2020-07-07">‘2017</time>
+												<span class="project__slide-number">_008</span>
+											</div>
+										</div>
+
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/lv-apartments/lv-apartments-3.jpg" alt="image-3">
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/lv-apartments/lv-apartments-4.jpg" alt="image-4">
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/lv-apartments/lv-apartments-5.jpg" alt="image-5">
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/lv-apartments/lv-apartments-6.jpg" alt="image-6">
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/lv-apartments/lv-apartments-7.jpg" alt="image-7">
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/lv-apartments/lv-apartments-8.jpg" alt="image-8">
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/lv-apartments/lv-apartments-9.jpg" alt="image-9">
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/lv-apartments/lv-apartments-10.jpg" alt="image-10">
+									</div>
+								</div>
+								<!-- Якщо потрібна пагінація -->
+								<div class="swiper-pagination"></div>
+								<!-- Якщо потрібен скролбар -->
+								<div class="swiper-scrollbar"></div>
+							</div>
+							<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+							<button type="button" class="swiper-button-prev button-prev--two">
+								<!-- <img src="@img/icons/arrow-left.svg"alt="button-prev"> -->
+								<svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<rect x="10.6685" y="21.3793" width="15.0618" height="1.08903" rx="0.544514"
+										transform="rotate(-135 10.6685 21.3793)" fill="#1B1B1B" />
+									<rect x="0.0332031" y="10.6774" width="15.1001" height="1" rx="0.5"
+										transform="rotate(-45 0.0332031 10.6774)" fill="#1B1B1B" />
+								</svg>
+							</button>
+							<button type="button" class="swiper-button-next button-next--two">
+								<!-- <img src="@img/icons/arrow-right.svg" alt="button-prev"> -->
+								<svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<rect x="11.3311" y="0.620728" width="15.0618" height="1.08903" rx="0.544514"
+										transform="rotate(45 11.3311 0.620728)" fill="#1B1B1B" />
+									<rect x="21.9663" y="11.3226" width="15.1001" height="1" rx="0.5"
+										transform="rotate(135 21.9663 11.3226)" fill="#1B1B1B" />
+								</svg>
+							</button>
+							<button class="project__toggle-btn"><img src="@img/icons/btn-slider.svg" alt=""></button>
+						</div>
+					</div>
+
+					<div class="project__wrapper">
+						<div class="project__wrap">
+							<div class="project__box-info toggle-child">
+								<div class="project__title">Pr / House</div>
+								<span class="project__number">_033</span>
+								<dl class="project__description">
+									<dt>Опис</dt>
+									<dd>
+										<p>Проект будинку в передмісті Праги.
+											Простір будується вздовж умовної вісі перетікаючи по функціям.</p>
+										<p>Композиційним центром є атріум, в якому розташовується вітальня.
+											Підключаючись функційними сценаріми, розгортаються житлові зони будинку та
+											ділянка.</p>
+									</dd>
+
+									<dt>Тип</dt>
+									<dd>Приватний будинок</dd>
+
+									<dt>Місце</dt>
+									<dd>Прага, Чехія</dd>
+
+									<dt>Площа</dt>
+									<dd>431 м. кв</dd>
+								</dl>
+
+								<time class="project__date" datetime="2020-07-07">‘2020</time>
+							</div>
+
+							<div class="project__box-img toggle-child">
+								<img src="@img/projects/pr-house.jpg" alt="L / House">
+							</div>
+
+							<!-- Оболонка слайдера -->
+							<div class="project__slider swiper slider-three visually-hidden">
+								<!-- Частина слайдера, що рухається -->
+								<div class="project__swiper-wrapper swiper-wrapper">
+									<!-- Слайд -->
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/pr-house/pr-house-1.jpg" alt="image-1">
+									</div>
+									<div class="project__slide--text swiper-slide">
+										<img src="@img/sliders/pr-house/pr-house-6.jpg" alt="image-6">
+										<div class="project__slide-info">
+											<dl class="project__slide-description">
+												<dt>Опис</dt>
+												<dd>
+													<p>Проект будинку в передмісті Праги.
+														Простір будується вздовж умовної вісі перетікаючи по функціям.
+													</p>
+													<p>Композиційним центром є атріум, в якому розташовується вітальня.
+														Підключаючись функційними сценаріми, розгортаються житлові зони
+														будинку та
+														ділянка.</p>
+												</dd>
+											</dl>
+											<div class="project__slide-box">
+												<div>Тип</div>
+												<div>Приватний будинок</div>
+											</div>
+											<div class="project__slide-box">
+												<div>Місце</div>
+												<div>Прага, Чехія</div>
+											</div>
+											<div class="project__slide-box">
+												<div>Площа</div>
+												<div>431 м. кв</div>
+											</div>
+											<div class="project__slide-box">
+												<time class="project__slide-date" datetime="2020-07-07">‘2020</time>
+												<span class="project__slide-number">_033</span>
+											</div>
+										</div>
+
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/pr-house/pr-house-2.jpg" alt="image-2">
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/pr-house/pr-house-3.jpg" alt="image-3">
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/pr-house/pr-house-4.jpg" alt="image-4">
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/pr-house/pr-house-5.jpg" alt="image-5">
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/pr-house/pr-house-6.jpg" alt="image-6">
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/pr-house/pr-house-7.jpg" alt="image-7">
+									</div>
+									<div class="project__slide swiper-slide">
+										<img src="@img/sliders/pr-house/pr-house-8.jpg" alt="image-8">
+									</div>
+								</div>
+								<!-- Якщо потрібна пагінація -->
+								<div class="swiper-pagination"></div>
+								<!-- Якщо потрібен скролбар -->
+								<div class="swiper-scrollbar"></div>
+							</div>
+							<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+							<button type="button" class="swiper-button-prev button-prev--three">
+								<!-- <img src="@img/icons/arrow-left.svg"alt="button-prev"> -->
+								<svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<rect x="10.6685" y="21.3793" width="15.0618" height="1.08903" rx="0.544514"
+										transform="rotate(-135 10.6685 21.3793)" fill="#1B1B1B" />
+									<rect x="0.0332031" y="10.6774" width="15.1001" height="1" rx="0.5"
+										transform="rotate(-45 0.0332031 10.6774)" fill="#1B1B1B" />
+								</svg>
+							</button>
+							<button type="button" class="swiper-button-next button-next--three">
+								<!-- <img src="@img/icons/arrow-right.svg" alt="button-prev"> -->
+								<svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<rect x="11.3311" y="0.620728" width="15.0618" height="1.08903" rx="0.544514"
+										transform="rotate(45 11.3311 0.620728)" fill="#1B1B1B" />
+									<rect x="21.9663" y="11.3226" width="15.1001" height="1" rx="0.5"
+										transform="rotate(135 21.9663 11.3226)" fill="#1B1B1B" />
+								</svg>
+							</button>
+							<button class="project__toggle-btn"><img src="@img/icons/btn-slider.svg" alt=""></button>
+						</div>
+					</div>
+
 
 					<!--  -->
 
@@ -174,6 +842,7 @@
 		</main>
 		@@include('html/_footer.htm',{})
 	</div>
+	@@include('html/_preloader.htm',{})
 	@@include('html/_js.htm',{})
 </body>
 

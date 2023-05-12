@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Контакти | Zearchitects сontacts"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="contacts-page contacts">
+			<div class="contacts__container">
+				<div class="contacts__box">
+					<div class="contacts__info">
+						<h1 class="contacts__title visually-hidden">Контакти архітектурної студії zearchitects</h1>
+						<dl class="contacts__list">
+							<dt class="contacts__subtitle">Контакти</dt>
+							<dd>
+								<address class="contacts__address">Україна, Київ</address>
+							</dd>
+
+							<dt class="visually-hidden">Контактний номер телефону:</dt>
+							<dd class="contacts__phone"><a href="tel:+380957040874">
+									+38 095 704 08 74
+								</a></dd>
+
+							<dt class="visually-hidden">Контактна адреса електронної пошти:</dt>
+							<dd class="contacts__e-mail"><a href="mailto:info@zearchitects.com">
+									info@zearchitects.com
+								</a></dd>
+						</dl>
+						<div class="contacts__social social">
+							<ul class="social__list">
+								<li class="social__item"><a class="social__link" href="#"><img
+											src="@img/icons/facebook.svg" alt="facebook"></a></li>
+								<li class="social__item"><a class="social__link" href="#"><img
+											src="@img/icons/instagram.svg" alt="instagram"></a></li>
+								<li class="social__item"><a class="social__link" href="#"><img
+											src="@img/icons/youtube.svg" alt="youtube"></a></li>
+								<li class="social__item"><a class="social__link" href="#"><img
+											src="@img/icons/linkedin.svg" alt="linkedin"></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="contacts__callback callback">
+						<form class="callback__form" action="/submit-form" method="post">
+							<p class="callback__form-title">почнемо розмову</p>
+							<div class="callback__form-name">
+								<label for="user-name"><span></span></label>
+								<input class="input" type="text" id="user-name" name="name" placeholder="Ім’я *"
+									required>
+							</div>
+							<div class="callback__form-tel-phone">
+								<label for="telphone"><span></span></label>
+								<input class="input" type="tel" id="telphone" name="tel" placeholder="телефон *"
+									required>
+							</div>
+							<div class="callback__form-email">
+								<label for="user-email"><span></span></label>
+								<input class="input" type="email" id="user-email" name="email" placeholder="e-mail">
+							</div>
+							<div class="callback__form-question">
+								<label for="user-question"></label>
+								<textarea id="user-question" class="input" name="question" placeholder="повідомлення"
+									spellcheck="true" required></textarea>
+							</div>
+							<div class="callback__form-submit">
+								<p class="callback__info">Натискаючи “Відправити”, Ви даєте згоду на обробку, зберігання
+									та
+									використання
+									персональних даних.</p>
+								<button class="callback__form-btn dark-btn" type="submit">Відправити</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			
+		</main>
+		<!-- @@include('html/_footer.htm',{}) -->
+
+		<div class="footer__copyright copyright">
+			<div class="copyright__container">
+				<dl class="copyright__box">
+					<dt class="copyright__hour">© 2023</dt>
+					<dd class="copyright__webstudio"><a href="#"></a>zearchitects</dd>
+				</dl>
+			</div>
+		</div>
+	
+	</div>
+	@@include('html/_preloader.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

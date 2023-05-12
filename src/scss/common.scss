@@ -1,127 +1,161 @@
 // Заголовки, загальні БЕМ блоки та інше...
 
 .logo {
-	font-size: 23px;
-	@include adaptiveValue("font-size", 23, 20, 3, 820, 375);
-    text-transform: uppercase;
-  }
-
+  font-size: 23px;
+  @include adaptiveValue("font-size", 23, 20, 3, 820, 375);
+  text-transform: uppercase;
+}
 
 .social {
-	
-	// .social__list
+  // .social__list
 
-	&__list {
-		display: flex;
-	}
+  &__list {
+    display: flex;
+  }
 
-	// .social__item
+  // .social__item
 
-	&__item {
-		width: rem(25);
-		height: rem(25);
-		border: 1.5px solid var(--text-primary);
-		border-radius: 50%;
-		display: flex;
-		justify-content: center; /* выравнивание по горизонтали */
-		align-items: center; /* выравнивание по вертикали */
-		position: relative; /* необходимо для позиционирования потомков */
-		transition: all 0.36s ease-in-out 0.036s;
-		&:hover,
-		&:focus {
-		  border: 1.5px solid #ffffff;
-		}
-	
-		& > a {
-		  position: absolute;
-		  top: 50%;
-		  left: 50%;
-		  transform: translate(
-			-50%,
-			-50%
-		  ); /* центрирование по горизонтали и вертикали */
-		}
-		&:nth-child(1) > a {
-		  transform: translate(
-			-46%,
-			-48%
-		  ); /* центрирование по горизонтали и вертикали */
-		}
-		&:nth-child(2) > a {
-		  transform: translate(
-			-46%,
-			-38%
-		  ); /* центрирование по горизонтали и вертикали */
-		}
-		&:nth-child(3) > a {
-			transform: translate(
-			  -48%,
-			  -30%
-			); /* центрирование по горизонтали и вертикали */
-		  }
-		  &:nth-child(4) > a {
-			transform: translate(
-			  -48%,
-			  -44%
-			); /* центрирование по горизонтали и вертикали */
-		  }
-	
-		&:not(:last-child) {
-		  margin-right: rem(12.76);
-		}
-	}
+  &__item {
+    width: rem(25);
+    height: rem(25);
+    border: 1.5px solid var(--text-primary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center; /* выравнивание по горизонтали */
+    align-items: center; /* выравнивание по вертикали */
+    position: relative; /* необходимо для позиционирования потомков */
+    transition: all 0.36s ease-in-out 0.036s;
+    &:hover,
+    &:focus {
+      border: 1.5px solid #ffffff;
+    }
+
+    & > a {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(
+        -50%,
+        -50%
+      ); /* центрирование по горизонтали и вертикали */
+    }
+    &:nth-child(1) > a {
+      transform: translate(
+        -46%,
+        -48%
+      ); /* центрирование по горизонтали и вертикали */
+    }
+    &:nth-child(2) > a {
+      transform: translate(
+        -52%,
+        -38%
+      ); /* центрирование по горизонтали и вертикали */
+    }
+    &:nth-child(3) > a {
+      transform: translate(
+        -52%,
+        -30%
+      ); /* центрирование по горизонтали и вертикали */
+    }
+    &:nth-child(4) > a {
+      transform: translate(
+        -48%,
+        -44%
+      ); /* центрирование по горизонтали и вертикали */
+    }
+
+    &:not(:last-child) {
+      margin-right: rem(12.76);
+    }
+  }
 }
 
 .lang__link,
-.menu-item{
-	@include adaptiveValue("font-size", 20, 14, 3, 820, 375);
+.menu-item {
+  @include adaptiveValue("font-size", 20, 14, 3, 820, 375);
 }
 
 // btn dark
 .dark-btn {
-	display: block;
-	background-color: var(--text-primary);
-	border-radius: 1px;
-	color: var(--primary);
-	text-transform: uppercase;
-	transition: background-color 0.3s ease-in-out 0s;
-	cursor: pointer;
+  display: block;
+  background-color: var(--text-primary);
+  border-radius: 1px;
+  color: var(--primary);
+  text-transform: uppercase;
+  transition: background-color 0.3s ease-in-out 0s;
+  cursor: pointer;
 
-	&:focus,
-	&:hover {
-	  background-color: var(--text-secondary);
-	}
-
-	&:active{
-		background-color: var(--text-primary);
-	}
-  }
-  
-  // btn-center
-  .btn-center {
-	display: flex;
-	justify-content: center;
-	margin: 0 auto;
-	padding: rem(11) rem(97) rem(12) rem(96);
-
-	@include adaptiveValue("padding-top", 12, 7, 3, 820, 375);
-	@include adaptiveValue("padding-right", 96, 66, 3, 820, 375);
-	@include adaptiveValue("padding-bottom", 12, 8, 3, 820, 375);
-	@include adaptiveValue("padding-left", 96, 65, 3, 820, 375);
+  &:focus,
+  &:hover {
+    background-color: var(--text-secondary);
   }
 
-
-
-
-
-
-  .visually-hidden {
-	position: absolute !important;
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-	clip: rect(1px, 1px, 1px, 1px);
-	padding: 0 !important;
-	border: 0 !important;
-	height: 1px !important;
-	width: 1px !important;
-	overflow: hidden;
+  &:active {
+    background-color: var(--text-primary);
   }
+}
+
+// btn-center
+.btn-center {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: rem(11) rem(97) rem(12) rem(96);
+
+  @include adaptiveValue("padding-top", 12, 7, 0, 820, 375);
+  @include adaptiveValue("padding-right", 96, 66, 0, 820, 375);
+  @include adaptiveValue("padding-bottom", 12, 8, 0, 820, 375);
+  @include adaptiveValue("padding-left", 96, 65, 0, 820, 375);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  height: rem(35);
+  margin-bottom: rem(1);
+  padding: 10px 0px;
+  border-radius: 0px;
+  border-bottom: 1px solid var(--text-primary);
+  transition: border-bottom 0.3s ease-in-out 0s;
+  &::placeholder {
+    outline: none;
+    color: var(--text-primary);
+    text-transform: uppercase;
+  }
+  &:active,
+  &:focus,
+  &:hover {
+    outline: none; /* убрать стандартный обводку */
+  }
+}
+
+textarea {
+  width: 100%;
+  height: rem(98); //78+20=98
+  padding: 10px 0px;
+  border-radius: 0;
+  border-bottom: 1px solid var(--text-primary);
+  overflow-y: auto;
+  &::placeholder {
+    color: var(--text-primary);
+    text-transform: uppercase;
+  }
+  &:active,
+  &:focus,
+  &:hover {
+    outline: none; /* убрать стандартный обводку */
+    // border-bottom: 1px dashed $color-green; /* установить цвет границы */
+  }
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}

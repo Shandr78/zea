@@ -1,3 +1,54 @@
+.footer-callback {
+  // .footer-callback__container
+
+  &__container {
+  }
+
+  // .footer-callback__box
+
+  &__box {
+    border-top: 1px solid var(--border-secondary);
+    text-align: center;
+    & p {
+      text-align: center;
+      // margin-bottom: rem(40);
+     
+      &:first-child {
+        @include adaptiveValue("font-size", 30, 14, 0, 820, 375);
+        text-transform: uppercase;
+        // margin-top: rem(80);
+        @include adaptiveValue("margin-top", 80, 74, 0, 1920, 820);
+
+        @include adaptiveValue("margin-bottom", 40, 30, 2, 1920, 820);
+        @include adaptiveValue("margin-bottom", 30, 15, 3, 820, 375);
+      }
+      &:last-child{
+       
+      }
+    }
+    & a {
+      display: inline-block;
+      @include adaptiveValue("margin-top", 40, 45, 2, 1920, 820);
+      @include adaptiveValue("margin-top", 45, 30, 3, 820, 375);
+      @include adaptiveValue("padding-top", 12, 7, 0, 820, 375);
+      @include adaptiveValue("padding-right", 96, 66, 0, 820, 375);
+      @include adaptiveValue("padding-bottom", 12, 8, 0, 820, 375);
+      @include adaptiveValue("padding-left", 96, 65, 0, 820, 375);
+      // margin-bottom: rem(80);
+      @include adaptiveValue("margin-bottom", 80, 74, 0, 1920, 820);
+    }
+  }
+
+  // .footer-callback__btn-link
+
+  &__btn-link {
+  }
+}
+.btn-center {
+}
+.dark-btn {
+}
+
 //====================================================================================================
 .footer {
   border-top: 1px solid var(--text-primary);
@@ -112,7 +163,7 @@
 
   &__phone {
     text-align: center;
-    @include adaptiveValue("padding-bottom", 20, 15, 3, 1920, 820);
+    @include adaptiveValue("padding-bottom", 20, 15, 0, 1920, 820);
     &:hover,
     &:focus {
       color: var(--text-secondary);
@@ -123,7 +174,7 @@
 
   &__email {
     text-align: center;
-    @include adaptiveValue("padding-bottom", 40, 30, 3, 1920, 820);
+    @include adaptiveValue("padding-bottom", 40, 30, 0, 1920, 820);
     &:hover,
     &:focus {
       color: var(--text-secondary);
@@ -140,8 +191,8 @@
   // .copyright__box
 
   &__box {
-    @include adaptiveValue("padding-top", 20, 15, 3, 1920, 820);
-    @include adaptiveValue("padding-bottom", 20, 15, 3, 1920, 820);
+    @include adaptiveValue("padding-top", 20, 15, 0, 1920, 820);
+    @include adaptiveValue("padding-bottom", 20, 15, 0, 1920, 820);
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
