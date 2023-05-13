@@ -155,6 +155,7 @@ body {
 // Підключення стилів окремих сторінок
 @import "home";
 @import "company";
+@import "services";
 @import "contacts";
 
 // Підключення стилів медиазапитів для окремих сторінок
@@ -162,3 +163,5 @@ body {
 @import "responsive/responsive-footer";
 @import "responsive/responsive-home";
 @import "responsive/responsive-company";
+@import "responsive/responsive-contacts";
+@import "responsive/responsive-services";

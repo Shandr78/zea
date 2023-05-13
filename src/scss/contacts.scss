@@ -1,6 +1,7 @@
 //====================================================================================================
 .contacts-page {
-    margin-bottom: rem(253);
+  // margin-bottom: rem(253);
+  @include adaptiveValue("margin-bottom", 253, 74, 0, 1920, 820);
 }
 .contacts {
   // .contacts__container
@@ -15,7 +16,6 @@
     justify-content: space-between;
     @include adaptiveValue("margin-top", 160, 150, 2, 1920, 821);
     @include adaptiveValue("margin-top", 150, 74, 3, 820, 375);
-    
   }
 
   // .contacts__info
@@ -28,7 +28,6 @@
   // .contacts__title
 
   &__title {
-    
   }
 
   // .contacts__list
@@ -40,7 +39,9 @@
 
   &__subtitle {
     text-transform: uppercase;
-    font-size: rem(30);
+    // font-size: rem(30);
+    @include adaptiveValue("font-size", 30, 14, 0, 820, 375);
+    // @include adaptiveValue("margin-bottom", 80, 80, 2, 1920, 1035);
     @include adaptiveValue("margin-bottom", 80, 289, 2, 1920, 820);
     @include adaptiveValue("margin-bottom", 289, 45, 3, 820, 375);
   }
@@ -56,6 +57,7 @@
 
   &__phone {
     text-align: left;
+    padding-bottom: 0;
     @include adaptiveValue("margin-bottom", 17, 30, 2, 1920, 820);
     @include adaptiveValue("margin-bottom", 30, 15, 3, 820, 375);
   }
@@ -63,15 +65,13 @@
   // .contacts__e-mail
 
   &__e-mail {
-   
-
   }
 
   // .contacts__social
 
   &__social {
-   position: absolute;
-   bottom: rem(79);
+    position: absolute;
+    bottom: rem(79);
   }
   &__callback {
     max-width: rem(611);
@@ -88,7 +88,6 @@
   // .social__item
 
   &__item {
-   
   }
 
   // .social__link
@@ -106,9 +105,11 @@
 
   &__form-title {
     text-transform: uppercase;
-    font-size: rem(30);
-    @include adaptiveValue("margin-bottom", 80, 289, 2, 1920, 820);
-    @include adaptiveValue("margin-bottom", 289, 45, 3, 820, 375);
+    // font-size: rem(30);
+    @include adaptiveValue("font-size", 30, 14, 0, 820, 375);
+    @include adaptiveValue("margin-bottom", 80, 74, 2, 1920, 820);
+    // @include adaptiveValue("margin-bottom", 80, 289, 2, 1035, 820);
+    @include adaptiveValue("margin-bottom", 74, 35, 3, 820, 375); //45-10=35
   }
 
   // .callback__form-name
@@ -119,35 +120,65 @@
   // .callback__form-tel-phone
 
   &__form-tel-phone {
-    margin-top: rem(43); //43+10=53
+    // margin-top: rem(43); //43+10=53
   }
 
   // .callback__form-email
 
   &__form-email {
-    margin-top: rem(43); //43+10=53
+    // margin-top: rem(43); //43+10=53
   }
 
   // .callback__form-question
 
   &__form-question {
-    margin-top: rem(43); //43+10=53
+    // margin-top: rem(43); //43+10=53
+  }
+  & textarea {
+    // height: rem(88); //78+10=88
+    @include adaptiveValue("height", 88, 96, 2, 1920, 820);
+    @include adaptiveValue("height", 96, 61, 3, 820, 375);
+
+  }
+
+  &__form-tel-phone,
+  &__form-email,
+  &__form-question {
+    @include adaptiveValue(
+      "margin-top",
+      43,
+      33,
+      2,
+      1920,
+      820
+    ); //43+10=53 / 33+10=43
+
+    @include adaptiveValue(
+      "margin-top",
+      33,
+      6,
+      3,
+      820,
+      375
+    ); //33+10=43 / 6+10=16
   }
 
   // .callback__form-submit
 
   &__form-submit {
-    margin-top: rem(40); 
+    // margin-top: rem(40);
+    @include adaptiveValue("margin-top", 40, 74, 2, 1920, 820);
+    @include adaptiveValue("margin-top", 74, 45, 3, 820, 375);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
   }
 
   // .callback__info
 
   &__info {
     font-size: rem(12);
+    padding-right: rem(10);
   }
 
   // .callback__form-btn
@@ -158,7 +189,11 @@
     @include adaptiveValue("padding-right", 96, 66, 0, 820, 375);
     @include adaptiveValue("padding-bottom", 12, 8, 0, 820, 375);
     @include adaptiveValue("padding-left", 96, 65, 0, 820, 375);
-   
+    // margin-bottom: rem(30);
+    @include adaptiveValue("margin-bottom", 30, 30, 1, 1035, 820);
+    @include adaptiveValue("margin-bottom", 30, 15, 1, 820, 375);
+
+
   }
 }
 .input {

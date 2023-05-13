@@ -1,0 +1,80 @@
+//====================================================================================================
+
+.services-page {
+    margin-bottom: rem(80);
+}
+.services {
+  // .services__container
+
+  &__container {
+  }
+
+  // .services__box
+
+  &__box {
+    // margin-top: rem(160);
+    @include adaptiveValue("margin-top", 160, 150, 2, 1920, 820);
+    @include adaptiveValue("margin-top", 150, 74, 3, 820, 375);
+    
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+
+  // .services__title
+
+  &__title {
+    font-size: 30px;
+    @include adaptiveValue("font-size", 30, 14, 0, 820, 375);
+    line-height: 100%;
+    text-transform: uppercase;
+    padding-right: rem(10);
+  }
+
+  // .services__info
+
+  &__info {
+    line-height: 140%;
+    padding-left: rem(10);
+    padding-bottom: rem(69);
+  }
+
+  // .services__spollers
+
+  &__spollers {
+    padding-left: rem(10);
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+}
+// Дивись - базові стилі спойлерів 
+.spollers {
+  // .spollers__item
+
+  &__item {
+    
+  }
+
+  // .spollers__title
+
+  &__title {
+    font-size: rem(16);
+    text-transform: uppercase;
+    padding: rem(20) 0 rem(20) 0;
+    display: flex;
+    justify-content: space-between;
+    & > img{
+        position: relative;
+        bottom: -7.5px;
+    }
+  }
+
+  // .spollers__body
+
+  &__body {
+    padding: 0 0 rem(20) 0;
+  }
+}
+
+//====================================================================================================

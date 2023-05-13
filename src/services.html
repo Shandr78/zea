@@ -8,10 +8,65 @@
 	<div class="wrapper">
 		@@include('html/_header.htm',{})
 		<main class="services-page services">
-			
+			<div class="services__container">
+				<h1 class="visually-hidden">послуги архітектурної студії zearchitects</h1>
+				<div class="services__box">
+					<div class="services__title">послуги</div>
+					<p class="services__info">Кожен проект унікальний. Він створюється з багатьох факторів, які ми
+						попередньо досліджуємо та пов’язуємо. Оптимальною та хірургічною послідовністю дій ми даємо
+						відповіді на досліджені питання.<br><br>Ми працюємо з комерційними, громадськими, житловими
+						просторами і не тільки.<br><br>Ось деякі з основних послуг, які можемо Вам запропонувати:</p>
+
+					<div class="services__spollers spollers" data-spollers data-spollers-speed="500">
+						<details class="spollers__item">
+							<summary class="spollers__title">
+								ГЕНЕРАЛЬНЕ ПРОЕКТУВАННЯ <img src="@img/icons/arrow-down.svg" alt="arrow-down">
+							</summary>
+							<div class="spollers__body">Ми спроектуємо Ваш об’єкт у всіх стадіях /ескізний проект,
+								проект, робоча документація та інше/, та розділах /генплан, архітектура, конструктив,
+								інженерія та інше/.</div>
+						</details>
+						<details class="spollers__item">
+							<summary class="spollers__title">
+								архітектурне проектування <img src="@img/icons/arrow-down.svg" alt="arrow-down">
+							</summary>
+							<div class="spollers__body">Наша головна спеціалізація та пристрасть. Це діалог між
+								просторами та людьми. Це функція, яка відповідає потребам. Довіртеся нам.</div>
+						</details>
+						<details class="spollers__item">
+							<summary class="spollers__title">
+								ІНТЕР’ЄРНЕ ПРОЕКТУВАННЯ <img src="@img/icons/arrow-down.svg" alt="arrow-down">
+							</summary>
+							<div class="spollers__body">Інтер’єр - логічне продовження архітектури, її деталізація в сформованих просторах. Відчуваючи потреби просторів та Ваші життєві сценарії, сформуємо релевантні проектні рішення.</div>
+						</details>
+						<details class="spollers__item">
+							<summary class="spollers__title">
+								Аналітика земельних ділянок <img src="@img/icons/arrow-down.svg" alt="arrow-down">
+							</summary>
+							<div class="spollers__body">Об’єкт починається з ділянки. Вважаємо, що у ділянок немає недоліків, але є фактори які впливають на результат. Допоможемо виявити ці фактори та продемонструвати цифровими та графічними показниками.</div>
+						</details>
+						<details class="spollers__item">
+							<summary class="spollers__title">
+								міСтобудівний аналіз <img src="@img/icons/arrow-down.svg" alt="arrow-down">
+							</summary>
+							<div class="spollers__body">Місце завжди пов’язане просторами та функціями з оточенням. Інтеграція об’єкту 
+								в тканину міста, інклюзивне підключення до вже працюючих просторів збільшує життєвість проекту. Ми Вам з цим допоможемо.</div>
+						</details>
+						<details class="spollers__item">
+							<summary class="spollers__title">
+								авторський нагляд  <img src="@img/icons/arrow-down.svg" alt="arrow-down">
+							</summary>
+							<div class="spollers__body">Проект - це вже готова інструкція. Але будівництво - це живий процес 
+								де задіяно багато підрядників, технологічних процесів, поставок матеріалів та ще багатьох факторів. На цьому етапі ми допоможемо Вам дійти до передбаченого результату.</div>
+						</details>
+					</div>
+				</div>
+
+			</div>
 		</main>
 		@@include('html/_footer.htm',{})
 	</div>
+	@@include('html/_preloader.htm',{})
 	@@include('html/_js.htm',{})
 </body>
 
