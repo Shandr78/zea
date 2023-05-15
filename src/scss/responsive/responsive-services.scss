@@ -1,67 +1,137 @@
 //====================================================================================================
-@media (max-width: 820px) {
+@media (max-width: 1040px) {
+  .services-page {
+   
+  }
+  .services {
+    // .services__container
   
+    &__container {
+    }
+  
+    // .services__box
+  
+    &__box {
+      grid-template-columns: calc(154px + 27px + 31px) 1fr;
+      border-bottom: none;
+      
+    }
+  
+    // .services__title
+  
+    &__title {
+    }
+  
+    // .services__info
+  
+    &__info {
+
+    }
+  
+    // .services__spollers
+  
+    &__spollers {
+    }
+  }
 }
+@media (max-width: 770px) {
+  .services-page {
+   
+  }
+  .services {
+    // .services__container
+  
+    &__container {
+    }
+  
+    // .services__box
+  
+    &__box {
+      grid-template-columns: calc(154px + 27px + 10px) 1fr;
+
+    }
+  
+    // .services__title
+  
+    &__title {
+    }
+  
+    // .services__info
+  
+    &__info {
+
+    }
+  
+    // .services__spollers
+  
+    &__spollers {
+    }
+  }
+}
+
 //====================================================================================================
 
 @media (max-width: 700px) {
   .services-page {
-
-}
-.services {
-  // .services__container
-
-  &__container {
   }
+  .services {
+    // .services__container
 
-  // .services__box
+    &__container {
+    }
 
-  &__box {
-    // margin-top: rem(160);
+    // .services__box
 
-    grid-template-columns: 1fr;
-  }
+    &__box {
+      // margin-top: rem(160);
 
-  // .services__title
+      grid-template-columns: 1fr;
+      border-bottom: 1px solid var(--border-secondary);
+    }
 
-  &__title {
+    // .services__title
 
-  }
+    &__title {
+      padding-bottom: rem(45);
+    }
 
-  // .services__info
+    // .services__info
 
-  &__info {
-padding-left: 0;
-  }
+    &__info {
+      padding-left: 0;
+    }
 
-  // .services__spollers
+    // .services__spollers
 
-  &__spollers {
-    grid-column: 1 / 2;
-    padding-left: 0;
-  }
-}
-// Дивись - базові стилі спойлерів 
-.spollers {
-  // .spollers__item
-
-  &__item {
-    
-  }
-
-  // .spollers__title
-
-  &__title {
-
-    & > img{
-
+    &__spollers {
+      grid-column: 1 / 2;
+      padding-left: 0;
+      gap: 10px;
     }
   }
+  // Дивись - базові стилі спойлерів
+  .spollers {
+    // .spollers__item
 
-  // .spollers__body
+    &__item {
+    }
 
-  &__body {
+    // .spollers__title
 
+    &__title {
+      transition: all 0s ease-out 0.5s;
+      border: none;
+      & > img {
+        bottom: 0;
+      }
+    }
+
+    // .spollers__body
+
+    &__body {
+      border: none;
+    }
   }
-}
+  
+
 }

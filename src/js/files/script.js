@@ -51,6 +51,7 @@ toggleBtns.forEach(function(btn) {
 
 // Додаємо/прибираємо класс visually-hidden для слайдерів на головній при ширині екрану 1140рх
 const sliders = document.querySelectorAll('.project__slider');
+const slidersProject = document.querySelectorAll('.projects__slider');
 const buttonPrev = document.querySelectorAll('.swiper-button-prev');
 const buttonNext = document.querySelectorAll('.swiper-button-next');
 
@@ -71,14 +72,14 @@ if (sliders){
 
   function toggleButtonVisibility() {
     buttonPrev.forEach(btn => {
-      if (window.innerWidth <= 1140) {
+      if (window.innerWidth <= 1140 || slidersProject) {
         btn.classList.remove('visually-hidden');
       } else {
         btn.classList.add('visually-hidden');
       }
     });
     buttonNext.forEach(btn => {
-      if (window.innerWidth <= 1140) {
+      if (window.innerWidth <= 1140 || slidersProject) {
         btn.classList.remove('visually-hidden');
       } else {
         btn.classList.add('visually-hidden');
@@ -89,4 +90,14 @@ if (sliders){
   window.addEventListener('load', toggleButtonVisibility);
   window.addEventListener('resize', toggleButtonVisibility);
 
-}
+} 
+// console.log(slidersProject);
+// if (slidersProject) {
+//   buttonPrev.forEach(btn => {
+//     console.log(btn);
+//     btn.classList.remove('visually-hidden');
+//   });
+//   buttonNext.forEach(btn => {
+//     btn.classList.remove('visually-hidden');
+//   });
+// }

@@ -2,6 +2,7 @@
 .contacts-page {
   // margin-bottom: rem(253);
   @include adaptiveValue("margin-bottom", 253, 74, 0, 1920, 820);
+  // border-bottom: 1px solid var(--border-secondary);
 }
 .contacts {
   // .contacts__container

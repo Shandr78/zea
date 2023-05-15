@@ -1,13 +1,15 @@
 //====================================================================================================
 
 .company-page {
-  @include adaptiveValue("margin-bottom", 80, 74, 2, 1920, 820);
-  @include adaptiveValue("margin-bottom", 74, 45, 3, 820, 375);
+ 
 }
 .company {
   // .company__container
 
   &__container {
+    @include adaptiveValue("padding-bottom", 80, 74, 2, 1920, 820);
+    @include adaptiveValue("padding-bottom", 74, 45, 3, 820, 375);
+    border-bottom: 1px solid var(--border-secondary);
   }
 
   // .company__title

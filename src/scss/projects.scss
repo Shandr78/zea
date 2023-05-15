@@ -1,10 +1,10 @@
 //====================================================================================================
 .wrapper {
 }
-.home-page {
+.projects-page {
   // border-bottom: 1px solid var(--border-secondary);
 }
-.home {
+.projects-all {
   // .home__container
 
   &__container {
@@ -23,15 +23,14 @@
     @include adaptiveValue("font-size", 60, 36.55, 3, 820, 375);
   }
 }
-.project {
+.projects {
   // .project__wrapper
 
   &__wrapper {
     position: relative;
     // margin-bottom: rem(40);
-    @include adaptiveValue("padding-bottom", 40, 27, 2, 1920, 1140);
-    @include adaptiveValue("padding-bottom", 27, 0, 3, 1140, 820);
-    // @include adaptiveValue("padding-bottom", 27, 30, 3, 820, 375);
+    @include adaptiveValue("padding-bottom", 40, 27, 2, 1920, 820);
+    @include adaptiveValue("padding-bottom", 27, 30, 3, 820, 375);
     // padding-top: rem(40);
     border-top: 1px solid var(--border-secondary);
     @include adaptiveValue("padding-top", 40, 30, 0, 1920, 820);
@@ -45,24 +44,16 @@
   &__wrap {
     display: flex;
   }
-
-  // .project__box-info
-
   &__box-info {
-    padding-right: rem(15.5);
+    padding-right: rem(0);
     position: relative;
+    display: none;
   }
-
-  // .project__title
-
   &__title {
-    // font-size: 30px;
-    display: inline;
-    float: left;
-    @include adaptiveValue("margin-bottom", 80, 42.418, 1, 1920, 1140);
-    @include adaptiveValue("padding-bottom", 42.418, 27, 2, 1140, 820);
+    // @include adaptiveValue("margin-bottom", 80, 42.418, 1, 1920, 1140);
+    // @include adaptiveValue("padding-bottom", 42.418, 27, 2, 1140, 820);
     // @include adaptiveValue("margin-bottom", 27, 30, 3, 820, 375);
-    @include adaptiveValue("padding-bottom", 27, 30, 3, 820, 375);
+    // @include adaptiveValue("padding-bottom", 27, 30, 3, 820, 375);
 
     @include adaptiveValue("margin-top", 42.418, 27, 1, 1140, 820);
     @include adaptiveValue("margin-top", 27, 30, 3, 820, 375);
@@ -73,72 +64,15 @@
     @include adaptiveValue("font-size", 20, 14, 3, 820, 375);
     text-transform: uppercase;
   }
-
-  // .project__number
-
-  &__number {
-    float: right;
-  }
-
-  // .project__description
-
-  &__description {
-    clear: both;
-    display: grid;
-    grid-template-columns: 1fr 1.3fr;
-    & dd > p:not(:last-child) {
-      padding-bottom: rem(20);
-    }
-    & dd > p {
-      margin-bottom: rem(30);
-    }
-    & dd {
-      padding-bottom: rem(10);
-    }
-  }
-
-  // .project__btn
-
-  &__toggle-btn {
-    position: absolute;
-    // bottom: 0;
-    @include adaptiveValue("bottom", 40, 27, 2, 1920, 820);
-    @include adaptiveValue("bottom", 27, 30, 3, 820, 375);
-    left: 0;
-    width: rem(40);
-    height: rem(40);
-    border-radius: 50%;
-    border: 1px solid var(--text-primary);
-    transition: all 0.36s ease-in-out 0.036s;
-    &:hover,
-    &:focus {
-      border: 1.5px solid #ffffff;
-    }
-  }
-
-  // .project__date
-
-  &__date {
-    position: absolute;
-    bottom: 0;
-    right: rem(15.5);
-  }
-
-  // .project__box-img
-
-  &__box-img {
-    max-width: rem(733.5);
-    padding-left: rem(15.5);
-  }
 }
 
 //====================================================================================================
 
-.project__slider {
+.projects__slider {
   position: relative;
   z-index: 5;
 }
-.project__slide {
+.projects__slide {
   & > img {
     // min-width: 100%;
     // // max-height: 500px;
@@ -146,9 +80,6 @@
     // @include adaptiveValue("height", 460, 435, 0, 820, 768);
     // @include adaptiveValue("height", 435, 210, 3, 768, 375);
   }
-}
-.project__slide-info {
-  display: none;
 }
 
 

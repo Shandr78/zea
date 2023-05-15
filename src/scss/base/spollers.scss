@@ -18,12 +18,13 @@
   border-bottom: 1px solid var(--text-primary);
   position: relative;
   list-style: none;
-  transition: all 0.5s ease-out 0.5s;
+  // transition: all 0.5s ease-out 0.5s;
+  transition: border-bottom 0.8s ease 0.5s;
   z-index: 1;
   & > img{
     transition: transform 0.5s ease 0.1s;
   }
-  transition: all 0.5s ease 0.1s;
+  
   &::marker {
   }
   ._spoller-init & {
@@ -49,6 +50,7 @@
 		z-index: 10;
 		// border-bottom: none;
     border-bottom: 1px solid #fff;
+    transition: all 0.01s ease;
     & > img{
       transition: transform 0.5s ease 0.1s;
       transform: rotate(-90deg);
