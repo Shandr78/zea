@@ -1,4 +1,5 @@
 //====================================================================================================
+
 .wrapper {
 }
 .home-page {
@@ -23,19 +24,17 @@
     @include adaptiveValue("font-size", 60, 36.55, 3, 820, 375);
   }
 }
+
 .project {
   // .project__wrapper
 
   &__wrapper {
     position: relative;
-    // margin-bottom: rem(40);
     @include adaptiveValue("padding-bottom", 40, 27, 2, 1920, 1140);
     @include adaptiveValue("padding-bottom", 27, 0, 3, 1140, 820);
-    // @include adaptiveValue("padding-bottom", 27, 30, 3, 820, 375);
-    // padding-top: rem(40);
     border-top: 1px solid var(--border-secondary);
     @include adaptiveValue("padding-top", 40, 30, 0, 1920, 820);
-    &:last-child{
+    &:last-child {
       border-bottom: 1px solid var(--border-secondary);
     }
   }
@@ -46,28 +45,49 @@
     display: flex;
   }
 
+  // .project__slider
+
+  &__slider {
+    position: relative;
+    z-index: 5;
+  }
+
+  // .project__swiper-wrapper
+
+  &__swiper-wrapper {
+  }
+
+  // .project__slide
+
+  &__slide {
+  }
+
+  // .project__box
+
+  &__box {
+    display: flex;
+    max-width: 1253px;
+  }
+
   // .project__box-info
 
   &__box-info {
     padding-right: rem(15.5);
     position: relative;
+    flex-shrink: 0;
   }
 
   // .project__title
 
   &__title {
-    // font-size: 30px;
     display: inline;
     float: left;
-    @include adaptiveValue("margin-bottom", 80, 42.418, 1, 1920, 1140);
+    @include adaptiveValue("margin-bottom", 80, 42.418, 2, 1920, 1140);
     @include adaptiveValue("padding-bottom", 42.418, 27, 2, 1140, 820);
-    // @include adaptiveValue("margin-bottom", 27, 30, 3, 820, 375);
     @include adaptiveValue("padding-bottom", 27, 30, 3, 820, 375);
 
     @include adaptiveValue("margin-top", 42.418, 27, 1, 1140, 820);
     @include adaptiveValue("margin-top", 27, 30, 3, 820, 375);
-
-    // @include adaptiveValue("padding-bottom", 42.418, 27, 2, 1140, 820);
 
     @include adaptiveValue("font-size", 30, 20, 2, 1920, 820);
     @include adaptiveValue("font-size", 20, 14, 3, 820, 375);
@@ -85,7 +105,7 @@
   &__description {
     clear: both;
     display: grid;
-    grid-template-columns: 1fr 1.3fr;
+    grid-template-columns: 100px 404.5px;
     & dd > p:not(:last-child) {
       padding-bottom: rem(20);
     }
@@ -94,25 +114,6 @@
     }
     & dd {
       padding-bottom: rem(10);
-    }
-  }
-
-  // .project__btn
-
-  &__toggle-btn {
-    position: absolute;
-    // bottom: 0;
-    @include adaptiveValue("bottom", 40, 27, 2, 1920, 820);
-    @include adaptiveValue("bottom", 27, 30, 3, 820, 375);
-    left: 0;
-    width: rem(40);
-    height: rem(40);
-    border-radius: 50%;
-    border: 1px solid var(--text-primary);
-    transition: all 0.36s ease-in-out 0.036s;
-    &:hover,
-    &:focus {
-      border: 1.5px solid #ffffff;
     }
   }
 
@@ -130,68 +131,152 @@
     max-width: rem(733.5);
     padding-left: rem(15.5);
   }
-}
 
-//====================================================================================================
+  // .project__box--text
 
-.project__slider {
-  position: relative;
-  z-index: 5;
-}
-.project__slide {
-  & > img {
-    // min-width: 100%;
-    // // max-height: 500px;
-    // // @include adaptiveValue("height", 611, 465, 2, 1140, 820);
-    // @include adaptiveValue("height", 460, 435, 0, 820, 768);
-    // @include adaptiveValue("height", 435, 210, 3, 768, 375);
+  &__box--text {
+    display: none;
+  }
+
+  // .project__slide-info
+
+  &__slide-info {
+  }
+
+  // .project__slide-description
+
+  &__slide-description {
+  }
+
+  // .project__slide-box
+
+  &__slide-box {
+  }
+
+  // .project__slide-date
+
+  &__slide-date {
+  }
+
+  // .project__slide-number
+
+  &__slide-number {
+  }
+
+  // .project__toggle-btn
+
+  &__toggle-btn {
+    z-index: 4;
+    position: absolute;
+    // @include adaptiveValue("bottom", 40, 27, 2, 1920, 820);
+    // @include adaptiveValue("bottom", 27, 30, 3, 820, 375);
+    left: 0;
+    bottom: 0;
+    width: rem(40);
+    height: rem(40);
+    border-radius: 50%;
+    border: 1px solid var(--text-primary);
+    transition: all 0.36s ease-in-out 0.036s;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      border: 1.5px solid #ffffff;
+    }
+    &.button-next--16,
+    &.button-next--15,
+    &.button-next--14,
+    &.button-next--13,
+    &.button-next--12,
+    &.button-next--11,
+    &.button-next--10,
+    &.button-next--9,
+    &.button-next--8,
+    &.button-next--7,
+    &.button-next--6,
+    &.button-next--5,
+    &.button-next--4,
+    &.button-next--3,
+    &.button-next--2,
+    &.button-next--1 {
+      z-index: 5;
+      opacity: 0;
+      @include adaptiveValue("bottom", 40, 27, 2, 1920, 820);
+      @include adaptiveValue("bottom", 27, 30, 3, 820, 375);
+
+      // pointer-events: auto;
+    }
+  }
+
+  // .project__title-tablet
+
+  &__title-tablet {
+    display: inline;
+    float: left;
+    @include adaptiveValue("margin-bottom", 80, 42.418, 1, 1920, 1140);
+    @include adaptiveValue("padding-bottom", 42.418, 27, 2, 1140, 820);
+    @include adaptiveValue("padding-bottom", 27, 30, 3, 820, 375);
+
+    @include adaptiveValue("margin-top", 42.418, 27, 1, 1140, 820);
+    @include adaptiveValue("margin-top", 27, 30, 3, 820, 375);
+
+    @include adaptiveValue("font-size", 30, 20, 2, 1920, 820);
+    @include adaptiveValue("font-size", 20, 14, 3, 820, 375);
+    text-transform: uppercase;
+    display: none;
   }
 }
-.project__slide-info {
-  display: none;
+.swiper {
 }
-
-
-
+.slider-one {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-pagination {
+}
+.swiper-scrollbar {
+}
 .swiper-button-prev {
+  // display: none;
   z-index: 6;
   position: absolute;
   top: 50%;
   left: rem(0);
   transform: translateY(-50%);
-  padding: rem(30);
-  // @include adaptiveValue("padding", 30, 20, 2, 1920, 820);
+  opacity: 0;
+  padding: 24% rem(30) 15%;
   &:focus > svg rect,
   &:hover > svg rect {
     height: 2px;
     transition: height 0.3s ease;
   }
-
   @include adaptiveValue("top", 698, 678, 1, 1140, 820);
-  // @include adaptiveValue("top", 698, 528, 1, 1140, 820);
-  // @include adaptiveValue("top", 698, 284, 0, 1140, 375);
   @include adaptiveValue("top", 528, 465, 1, 820, 701);
   @include adaptiveValue("top", 460, 276, 3, 700, 375);
+
   @include adaptiveValue("left", 1000, 720, 1, 1140, 820);
   @include adaptiveValue("left", 720, 220, 3, 820, 300);
-  // @include adaptiveValue("top", 528, 428, 3, 820, 699);
-  // @include adaptiveValue("top", 670, 676, 3, 700, 375);
+}
+.button-prev--one {
 }
 .swiper-button-next {
+  // display: none;
   z-index: 6;
   position: absolute;
   top: 50%;
   right: rem(0);
   transform: translateY(-52%);
-  padding: rem(30);
-  // @include adaptiveValue("padding", 30, 20, 2, 1920, 820);
+  opacity: 0;
+  padding: 24% rem(30);
   &:focus > svg rect,
   &:hover > svg rect {
     height: 2px;
     transition: height 0.3s ease;
   }
   @include adaptiveValue("top", 698, 678, 1, 1140, 820);
-
   @include adaptiveValue("top", 528, 465, 1, 820, 701);
   @include adaptiveValue("top", 460, 276, 3, 700, 375);
+}
+.button-next--one {
 }

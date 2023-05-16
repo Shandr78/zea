@@ -43,8 +43,8 @@
     // font-size: rem(30);
     @include adaptiveValue("font-size", 30, 14, 0, 820, 375);
     // @include adaptiveValue("margin-bottom", 80, 80, 2, 1920, 1035);
-    @include adaptiveValue("margin-bottom", 80, 289, 2, 1920, 820);
-    @include adaptiveValue("margin-bottom", 289, 45, 3, 820, 375);
+    @include adaptiveValue("margin-bottom", 80, 272, 2, 1920, 820);
+    @include adaptiveValue("margin-bottom", 272, 45, 3, 820, 375);
   }
 
   // .contacts__address
@@ -52,6 +52,9 @@
   &__address {
     @include adaptiveValue("margin-bottom", 24, 30, 2, 1920, 820);
     @include adaptiveValue("margin-bottom", 30, 15, 3, 820, 375);
+  }
+  address {
+    font-style: normal;
   }
 
   // .contacts__phone

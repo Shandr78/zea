@@ -72,7 +72,6 @@ body {
 	// Сайт завантажений
 	.loaded & {
 	}
-
 }
 // Оболонка wrapper ============================================================================================================================================================================================================================================================================================================================================================================================================================================
 .wrapper {
@@ -154,7 +153,7 @@ body {
 
 // Підключення стилів окремих сторінок
 @import "home";
-@import "projects";
+// @import "projects";
 @import "company";
 @import "services";
 @import "contacts";
@@ -163,7 +162,7 @@ body {
 @import "responsive/responsive-header";
 @import "responsive/responsive-footer";
 @import "responsive/responsive-home";
-@import "responsive/responsive-projects";
+// @import "responsive/responsive-projects";
 @import "responsive/responsive-company";
 @import "responsive/responsive-contacts";
 @import "responsive/responsive-services";
