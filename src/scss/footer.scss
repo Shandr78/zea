@@ -17,7 +17,8 @@
         @include adaptiveValue("font-size", 30, 14, 0, 820, 375);
         text-transform: uppercase;
         // margin-top: rem(80);
-        @include adaptiveValue("margin-top", 80, 74, 0, 1920, 820);
+        @include adaptiveValue("margin-top", 80, 80, 2, 1920, 1040);
+        @include adaptiveValue("margin-top", 80, 74, 3, 1040, 820);
 
         @include adaptiveValue("margin-bottom", 40, 30, 2, 1920, 820);
         @include adaptiveValue("margin-bottom", 30, 15, 3, 820, 375);
@@ -35,7 +36,8 @@
       @include adaptiveValue("padding-bottom", 12, 8, 0, 820, 375);
       @include adaptiveValue("padding-left", 96, 65, 0, 820, 375);
       // margin-bottom: rem(80);
-      @include adaptiveValue("margin-bottom", 80, 74, 0, 1920, 820);
+      @include adaptiveValue("margin-bottom", 80, 80, 2, 1920, 1040);
+      @include adaptiveValue("margin-bottom", 80, 74, 3, 1040, 820);
     }
   }
 

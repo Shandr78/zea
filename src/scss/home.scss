@@ -72,9 +72,10 @@
   // .project__box-info
 
   &__box-info {
+    max-width: 520px;
     padding-right: rem(15.5);
     position: relative;
-    flex-shrink: 0;
+    // flex-shrink: 0;
   }
 
   // .project__title
@@ -105,7 +106,8 @@
   &__description {
     clear: both;
     display: grid;
-    grid-template-columns: 100px 404.5px;
+    max-width: rem(519.5);
+    grid-template-columns: 0.9fr 1.1fr;
     & dd > p:not(:last-child) {
       padding-bottom: rem(20);
     }

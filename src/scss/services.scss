@@ -16,7 +16,8 @@
     @include adaptiveValue("margin-top", 160, 150, 2, 1920, 820);
     @include adaptiveValue("margin-top", 150, 74, 3, 820, 375);
      // margin-bottom: rem(80);
-     @include adaptiveValue("padding-bottom", 80, 45, 2, 1920, 1040);
+     @include adaptiveValue("padding-bottom", 80, 80, 2, 1920, 1040);
+    //  @include adaptiveValue("padding-bottom", 80, 45, 2, 1040, 1040);
      @include adaptiveValue("padding-bottom", 45, 0, 1, 1040, 820);
      @include adaptiveValue("padding-bottom", 0, 45, 3, 820, 375);
      border-bottom: 1px solid var(--border-secondary);

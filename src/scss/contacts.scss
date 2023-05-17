@@ -43,7 +43,7 @@
     // font-size: rem(30);
     @include adaptiveValue("font-size", 30, 14, 0, 820, 375);
     // @include adaptiveValue("margin-bottom", 80, 80, 2, 1920, 1035);
-    @include adaptiveValue("margin-bottom", 80, 272, 2, 1920, 820);
+    @include adaptiveValue("margin-bottom", 88, 80, 2, 1920, 820);
     @include adaptiveValue("margin-bottom", 272, 45, 3, 820, 375);
   }
 
@@ -62,7 +62,7 @@
   &__phone {
     text-align: left;
     padding-bottom: 0;
-    @include adaptiveValue("margin-bottom", 17, 30, 2, 1920, 820);
+    @include adaptiveValue("margin-bottom", 17, 17, 2, 1920, 820);
     @include adaptiveValue("margin-bottom", 30, 15, 3, 820, 375);
   }
 
@@ -75,7 +75,8 @@
 
   &__social {
     position: absolute;
-    bottom: rem(79);
+    // bottom: rem(116);
+    @include adaptiveValue("bottom", 86, 108, 2, 1920, 1340);
   }
   &__callback {
     max-width: rem(611);
@@ -173,6 +174,10 @@
     // margin-top: rem(40);
     @include adaptiveValue("margin-top", 40, 74, 2, 1920, 820);
     @include adaptiveValue("margin-top", 74, 45, 3, 820, 375);
+
+    // margin-bottom: rem(30);
+    @include adaptiveValue("margin-bottom", 30, 30, 1, 1035, 820);
+    @include adaptiveValue("margin-bottom", 30, 15, 1, 820, 375);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -193,9 +198,7 @@
     @include adaptiveValue("padding-right", 96, 66, 0, 820, 375);
     @include adaptiveValue("padding-bottom", 12, 8, 0, 820, 375);
     @include adaptiveValue("padding-left", 96, 65, 0, 820, 375);
-    // margin-bottom: rem(30);
-    @include adaptiveValue("margin-bottom", 30, 30, 1, 1035, 820);
-    @include adaptiveValue("margin-bottom", 30, 15, 1, 820, 375);
+   
 
 
   }

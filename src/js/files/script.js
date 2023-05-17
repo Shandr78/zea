@@ -3,78 +3,154 @@ import { isMobile } from "./functions.js";
 // Підключення списку активних модулів
 import { flsModules } from "./modules.js";
 
-// // Заміна блоків головної сторінки з інформацією проекту на слайдер
-// let toggleBtns = document.querySelectorAll(".project__toggle-btn");
-// if (toggleBtns) {
-//   toggleBtns.forEach(function (btn) {
-//     btn.addEventListener("click", function (event) {
-//       event.stopPropagation(); // Остановить всплытие события
 
-//       let parent = this.parentNode;
-//       let childBlocks = parent.querySelectorAll(".toggle-child");
-//       let sliderBlock = parent.querySelector(".project__slider");
-//       let buttonPrev = parent.querySelector(".swiper-button-prev");
-//       let buttonNext = parent.querySelector(".swiper-button-next");
+// const langButtons = document.querySelectorAll("[data-btn]");
+// const allLangs = ["ru", "en", "de"];
+// const currentPathName = window.location.pathname;
+// let currentLang =
+// 	localStorage.getItem("language") || checkBrowserLang() || "ru";
+// let currentTexts = {};
 
-//       for (let i = 0; i < childBlocks.length; i++) {
-//         //   childBlocks[i].style.display = 'none';
-//         childBlocks[i].classList.toggle("visually-hidden");
-//       }
-//       btn.classList.toggle("visually-hidden");
-//       sliderBlock.classList.toggle("visually-hidden");
-//       buttonPrev.classList.toggle("visually-hidden");
-//       buttonNext.classList.toggle("visually-hidden");
-//       let nextSibling = parent.nextElementSibling;
-//       while (nextSibling) {
-//         if (
-//           nextSibling.tagName === "DIV" &&
-//           !nextSibling.classList.contains("toggle-child")
-//         ) {
-//           nextSibling.style.display = "block";
-//           break;
-//         }
-//         nextSibling = nextSibling.nextElementSibling;
-//       }
-//     });
-//   });
+// const homeTexts = {
+// 	"home-page-title": {
+// 		ua: "Ukrainian <br> architecture studio",
+// 		ru: "Ukrainian <br> architecture studio",
+// 		en: "Ukrainian <br> architecture studio",
+// 	},
+// 	"home-page-subtitle-1": {
+// 		ua: "Ks / townhouse",
+// 		ru: "Ks / townhouse",
+// 		en: "Ks / townhouse",
+// 	},
+// 	"home_page-2": {
+// 		ru: "Второй параграф",
+// 		en: "Second paragraph",
+// 		de: "Zweiter Absatz",
+// 	},
+// 	"home_page-3": {
+// 		ru: "Третий параграф",
+// 		en: "Third paragraph",
+// 		de: "Dritter Absatz",
+// 	},
+// 	"home_page-4": {
+// 		ru: "Другая страница",
+// 		en: "Another page",
+// 		de: "Eine andere Seite",
+// 	},
+// };
+// const anotherTexts = {
+// 	"another_page-title": {
+// 		ru: "Другая страница",
+// 		en: "Another page",
+// 		de: "Eine andere Seite",
+// 	},
+// 	"another_page-1": {
+// 		ru: "Первый параграф",
+// 		en: "First paragraph on another page",
+// 		de: "Erster Paragraph auf einer anderen Seite",
+// 	},
+// 	"another_page-2": {
+// 		ru: "Второй параграф",
+// 		en: "Second paragraph on another page",
+// 		de: "Zweiter Absatz auf einer anderen Seite",
+// 	},
+// 	"another_page-3": {
+// 		ru: "Третий параграф",
+// 		en: "Third paragraph on another page",
+// 		de: "Dritter Absatz auf einer anderen Seite",
+// 	},
+// 	"another_page-4": {
+// 		ru: "Домашняя страница",
+// 		en: "Homepage",
+// 		de: "Startseite",
+// 	},
+// };
+
+// // Проверка пути страницы сайта
+// function checkPagePathName() {
+// 	switch (currentPathName) {
+// 		case "/index.html":
+// 			currentTexts = homeTexts;
+// 			break;
+// 		case "/another_page.html":
+// 			currentTexts = anotherTexts;
+// 			break;
+
+// 		default:
+// 			currentTexts = homeTexts;
+// 			break;
+// 	}
+// }
+// checkPagePathName();
+
+// // Изменение языка у текстов
+// function changeLang() {
+// 	for (const key in currentTexts) {
+// 		let elem = document.querySelector(`[data-lang=${key}]`);
+// 		if (elem) {
+// 			elem.textContent = currentTexts[key][currentLang];
+// 		}
+// 	}
+// }
+// changeLang();
+
+// // Вешаем обработчики на каждую кнопку
+// langButtons.forEach((btn) => {
+// 	btn.addEventListener("click", (event) => {
+// 		if (!event.target.classList.contains("header__btn_active")) {
+// 			currentLang = event.target.dataset.btn;
+// 			localStorage.setItem("language", event.target.dataset.btn);
+// 			resetActiveClass(langButtons, "header__btn_active");
+// 			btn.classList.add("header__btn_active");
+// 			changeLang();
+// 		}
+// 	});
+// });
+
+// // Сброс активного класса у переданного массива элементов
+// function resetActiveClass(arr, activeClass) {
+// 	arr.forEach((elem) => {
+// 		elem.classList.remove(activeClass);
+// 	});
 // }
 
-// // Додаємо/прибираємо класс visually-hidden для слайдерів на головній при ширині екрану 1140рх
-// const sliders = document.querySelectorAll(".project__slider");
-// // const slidersProject = document.querySelectorAll('.projects__slider');
-// const buttonPrev = document.querySelectorAll(".swiper-button-prev");
-// const buttonNext = document.querySelectorAll(".swiper-button-next");
+// // Проверка активной кнопки
+// function checkActiveLangButton() {
+// 	switch (currentLang) {
+// 		case "ru":
+// 			document
+// 				.querySelector('[data-btn="ru"]')
+// 				.classList.add("header__btn_active");
+// 			break;
+// 		case "en":
+// 			document
+// 				.querySelector('[data-btn="en"]')
+// 				.classList.add("header__btn_active");
+// 			break;
+// 		case "de":
+// 			document
+// 				.querySelector('[data-btn="de"]')
+// 				.classList.add("header__btn_active");
+// 			break;
 
-// if (sliders) {
-//   function toggleSliderVisibility() {
-//     sliders.forEach((slider) => {
-//       if (window.innerWidth <= 1140) {
-//         slider.classList.remove("visually-hidden");
-//       } else {
-//         slider.classList.add("visually-hidden");
-//       }
-//     });
-//   }
-
-//   window.addEventListener("load", toggleSliderVisibility);
-//   window.addEventListener("resize", toggleSliderVisibility);
-
-//   function toggleButtonVisibility() {
-//     buttonPrev.forEach((btn) => {
-//       if (window.innerWidth <= 1140) {
-//         btn.classList.remove("visually-hidden");
-//       } else {
-//         btn.classList.add("visually-hidden");
-//       }
-//     });
-//     buttonNext.forEach((btn) => {
-//       if (window.innerWidth <= 1140) {
-//         btn.classList.remove("visually-hidden");
-//       } else {
-//         btn.classList.add("visually-hidden");
-//       }
-//     });
-//   }
-//   window.addEventListener("load", toggleButtonVisibility);
-//   window.addEventListener("resize", toggleButtonVisibility);
+// 		default:
+// 			document
+// 				.querySelector('[data-btn="ru"]')
+// 				.classList.add("header__btn_active");
+// 			break;
+// 	}
 // }
+// checkActiveLangButton();
+
+// // Проверка языка браузера
+// function checkBrowserLang() {
+// 	const navLang = navigator.language.slice(0, 2).toLowerCase();
+// 	const result = allLangs.some((elem) => {
+// 		return elem === navLang;
+// 	});
+// 	if (result) {
+// 		return navLang;
+// 	}
+// }
+
+// console.log("navigator.language", checkBrowserLang());
